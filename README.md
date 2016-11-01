@@ -20,7 +20,7 @@ Load a stitch preset and show the control panel.
 
 * Chose Live Port
 
-Setting for live from USB and HDMI are slightly diffenent.
+Settings for live from USB and HDMI are slightly diffenent.
 
 * Headset Mode
 
