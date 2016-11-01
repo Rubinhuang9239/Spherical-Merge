@@ -15,6 +15,7 @@ open Google Chrome and type "http://localhost:8000"
 
 <h4>Demo Interface</h4>
 * Stitch Mode
+
 Load a stitch preset and show the control panel.
 
 * Chose Live Port
