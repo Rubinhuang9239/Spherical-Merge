@@ -6,6 +6,7 @@ Dual Lens 360 camera stitching solution with manual controls
 
 ```
 $ cd .../Spherical-Merge
+
 $ python -m SimpleHTTPServer 8000
 ```
 open Google Chrome and type "http://localhost:8000"
