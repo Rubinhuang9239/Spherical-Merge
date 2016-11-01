@@ -1,0 +1,120 @@
+<html>
+
+	<title> Stitch Demo </title>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="lib/switchery/switchery.min.css" />
+		<link rel="stylesheet" href="css/sphereView.css" />
+
+	</head>
+
+	<body class = "container">
+
+		<div id = "stitch" class = "bnt" title="Setting"></div>
+
+		<video id="thetaVideo" muted style="display:none" src="placeholder.mp4" type='video/mp4'></video>
+
+		<!-- a few functions in the library 'A' may called in the library 'B', 
+		you may have to comment some of the function calls out 
+		from one of the libraries when you trying to remove the another. See the comment in those libraries for detail -->
+
+		<script src="lib/js/three.min.82.js"></script>
+		<script src="lib/js/OrbitControls.js"></script>
+		<script src="lib/js/stitchHelper.js"></script> <!-- Jquery is used in this, will update with pure javascript -->
+		<script src="lib/js/thetaView_Adjustable.js"></script>	<!-- Need to work woth stitchHelper -->
+
+
+		<script src="lib/js/jquery.js"></script> <!-- Optiona, Just for supporting this Demo -->
+		<script src="js/threeScene.js"></script>
+		<script src="lib/js/HUDSystem.js"></script> <!-- Optiona, Only include this if you need HUD -->
+		<script src="lib/js/StereoEffect.js"></script> <!-- Optiona, Only include this if you need VR HeadSet -->
+		<script src="lib/switchery/switchery.min.js"></script> <!-- Optional, Customized Switch -->
+		
+		<script src="js/animateUI.js"></script> <!-- Optional, Just for supporting this Demo -->
+		<script src="js/getUserMedia.js"></script> <!-- Optional, include this when you need hook up with a local 360 Camera -->
+
+
+		<script>
+
+		var settingDB = {
+			"headset" : false,
+		}
+
+		window.addEventListener( 'DOMContentLoaded', function(){
+
+			animate.init();
+
+			initThree();
+			theta_view('thetaVideo');
+			HUDSystem.init();
+			stitchHelper.init();
+			//userMedia.init();
+
+			animate.checkDoms();//Just check if there is a need to show Angle with HUD//
+		});
+
+		</script>
+
+		<div id="threeContainer"></div>
+
+		<div id="stitchHelper">
+			<div id="stitchHelpClose" class="closeBnt"></div>
+			<h4>Stitch Helper</h4>
+
+			<div id = "portChoice" >
+				Streaming Port: 
+				<select class = "streamPort">
+					<option class = "streamPort" value="USB">USB</option>
+					<option class = "streamPort" value="HDMI">HDMI</option>
+				</select>
+			</div>
+
+			<div id = "stitchTypeBox" class = "stitchTypes">
+				<div id = "demoSphere" class = "demoStatusNone" ></div>
+			</div>
+
+			<div id = "sphereASettings">
+				<b>A</b> Stretch V: <span class = "stitchValDis" key="a">0</span>
+				<input class = "slide spA" key="a" type = "range" min="360" max="560" value = "0" />
+				<b>A</b> Stretch U: <span class = "stitchValDis" key="b">0</span>
+				<input class = "slide spA" key="b" type = "range" min="360" max="560" value = "0" />
+				<b>A</b> Drift V: <span class = "stitchValDis" key="e">0</span>
+				<input class = "slide spA" key="e" type = "range" min="360" max="560" value = "0" />
+				<b>A</b> Drift U: <span class = "stitchValDis" key="f">0</span>
+				<input class = "slide spA" key="f" type = "range" min="550" max="650" value = "0" />
+			</div>
+
+			<br />
+
+			<div id = "sphereBSettings">
+				<b>B</b> Stretch V: <span class = "stitchValDis" key="c">0</span>
+				<input class = "slide spB" key="c" type = "range" min="360" max="560" value = "0" />
+				<b>B</b> Stretch U: <span class = "stitchValDis" key="d">0</span>
+				<input class = "slide spB" key="d" type = "range" min="360" max="560" value = "0" />
+				<b>B</b> Drift V: <span class = "stitchValDis" key="g">0</span>
+				<input class = "slide spB" key="g" type = "range" min="1380" max="1520" value = "0" />
+				<b>B</b> Drift U: <span class = "stitchValDis" key="h">0</span>
+				<input class = "slide spB" key="h" type = "range" min="550" max="650" value = "0" />
+			</div>
+
+		</div>
+
+		<div id="offAngleBox">
+
+			<p id="vrModeToggel">Headset Mode</p>
+			<div class="switchBox">
+				<input key="headset" type="checkbox" class="js-switch" />
+			</div>
+
+			<p id="resetCam" class="offAngle">Reset Camera</p>
+			<p class="offAngle">X : <span id="offAngleX"><span></p>
+			<p class="offAngle">Y : <span id="offAngleY"><span></p>
+			<p class="offAngle">Z : <span id="offAngleZ"><span></p>
+
+		</div>
+
+	</body>
+
+
+</html>
