@@ -13,5 +13,6 @@ open Google Chrome and type "http://localhost:8000"
 
 <h4>Demo Interface</h4>
 * Stitch Mode
+* Headset Mode
 * Get user Media
 
