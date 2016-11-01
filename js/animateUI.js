@@ -4,6 +4,11 @@ animate.init = function(){
 
 	animate.stitchHelperPanel = document.getElementById("stitchHelper");
 
+	getUserMediaBtn = document.getElementById("getUserMediaBtn");
+	getUserMediaBtn.addEventListener("click",function(){
+		userMedia.init();
+	});
+
 	stitchBtn = document.getElementById("stitch");
 	stitchBtn.addEventListener("click",function(){
 		animate.stitchHelpStatus("open");

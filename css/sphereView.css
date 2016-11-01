@@ -209,6 +209,13 @@ body{
 	padding: 0px 0px 0px 5px;
 }
 
+#getUserMediaBtn{
+	background-color: rgba(255,50,50,0.25);
+	cursor: pointer;
+}
+#getUserMediaBtn:hover{
+	opacity: 0.75;
+}
 
 #vrModeToggel{
 	background-color: rgba(0,205,250,0.25);
@@ -219,6 +226,7 @@ body{
 	background-color: rgba(0,255,200,0.25);
 	cursor: pointer;
 }
+
 #resetCam:hover{
 	opacity: 0.75;
 }
