@@ -13,7 +13,7 @@
 
 		<div id = "stitch" class = "bnt" title="Setting"></div>
 
-		<video id="thetaVideo" muted style="display:none" src="placeholder.mp4" type='video/mp4'></video>
+		<video id="thetaVideo" muted style="display:none" loop="true" autoplay="" src="video/placeholder.mp4" type='video/mp4'></video>
 
 		<!-- a few functions in the library 'A' may called in the library 'B', 
 		you may have to comment some of the function calls out 
@@ -65,8 +65,9 @@
 			<div id = "portChoice" >
 				Streaming Port: 
 				<select id="streamPort" class = "streamPort">
-					<option class = "streamPort" value="USB">USB</option>
-					<option class = "streamPort" value="HDMI">HDMI</option>
+					<option class = "streamPort" value="Ricoh_USB">Ricoh USB Live / Recorded</option>
+					<option class = "streamPort" value="Ricoh_HDMI">Ricoh HDMI Live</option>
+					<option class = "streamPort" value="Insta360_RAW">Insta360 4K Unstitched</option>
 				</select>
 			</div>
 
@@ -76,26 +77,26 @@
 
 			<div id = "sphereASettings">
 				<b>A</b> Stretch V: <span class = "stitchValDis" key="a">0</span>
-				<input class = "slide spA" key="a" type = "range" min="360" max="560" value = "0" />
+				<input class = "slide spA" key="a" type = "range" min="320" max="560" value = "0" />
 				<b>A</b> Stretch U: <span class = "stitchValDis" key="b">0</span>
-				<input class = "slide spA" key="b" type = "range" min="360" max="560" value = "0" />
+				<input class = "slide spA" key="b" type = "range" min="320" max="560" value = "0" />
 				<b>A</b> Drift V: <span class = "stitchValDis" key="e">0</span>
-				<input class = "slide spA" key="e" type = "range" min="360" max="560" value = "0" />
+				<input class = "slide spA" key="e" type = "range" min="320" max="560" value = "0" />
 				<b>A</b> Drift U: <span class = "stitchValDis" key="f">0</span>
-				<input class = "slide spA" key="f" type = "range" min="550" max="650" value = "0" />
+				<input class = "slide spA" key="f" type = "range" min="450" max="650" value = "0" />
 			</div>
 
 			<br />
 
 			<div id = "sphereBSettings">
 				<b>B</b> Stretch V: <span class = "stitchValDis" key="c">0</span>
-				<input class = "slide spB" key="c" type = "range" min="360" max="560" value = "0" />
+				<input class = "slide spB" key="c" type = "range" min="320" max="560" value = "0" />
 				<b>B</b> Stretch U: <span class = "stitchValDis" key="d">0</span>
-				<input class = "slide spB" key="d" type = "range" min="360" max="560" value = "0" />
+				<input class = "slide spB" key="d" type = "range" min="320" max="560" value = "0" />
 				<b>B</b> Drift V: <span class = "stitchValDis" key="g">0</span>
-				<input class = "slide spB" key="g" type = "range" min="1380" max="1520" value = "0" />
+				<input class = "slide spB" key="g" type = "range" min="1280" max="1520" value = "0" />
 				<b>B</b> Drift U: <span class = "stitchValDis" key="h">0</span>
-				<input class = "slide spB" key="h" type = "range" min="550" max="650" value = "0" />
+				<input class = "slide spB" key="h" type = "range" min="450" max="650" value = "0" />
 			</div>
 
 		</div>

@@ -32,3 +32,7 @@ userMedia.init = function(){
                           errorCallback
                         );
 }
+
+userMedia.stop = function(){
+    console.log(window.stream);
+}
