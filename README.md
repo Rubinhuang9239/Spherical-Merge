@@ -16,18 +16,25 @@ open Google Chrome and type "http://localhost:8000"
 <h4>Demo Interface</h4>
 * Stitch Mode
 
-Load a stitch preset and show the control panel.
+Stitch menu will pop up from the side and you can choose to load a stitch preset for your 360 camera.
 
-* Chose Live Port
+* Choose A Live Port
 
 Settings for live from USB and HDMI are slightly diffenent.
+<br />
+Now supporting:
+<br /><b>Ricoh ThetaS</b> when live from it's <b>USB</b> port, or it's recorded video.
+<br /><b>Ricoh ThetaS</b> when live from it's <b>HDMI</b> port. (HDMI Capture device needed, I am using "MegaWell" HDMI to USB 3.0)
+<br /><b>Insta360 4K</b> when live from PBS with it <b>Unstitched</b> video.
 
 * Headset Mode
 
-Split the screen side by side to fit for VR headset
+Split the screen side by side to fit on VR headsets. Support phone accelerometer.
 
 * Get user Media
 
-Get live video from 360 camera and map onto the spherical modle.
-Web Cam will be used if there is no other camera connected.
+Get live video from 360 camera and map the video as texture onto the sphere model.
+Web Cam will be used instead if there is no other camera connected.
+
+<h4>Stop "getUserMedia" when not using it</h4>
 
