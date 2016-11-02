@@ -27,7 +27,7 @@ Now supporting:
 <br /><b>Ricoh ThetaS</b> when live from it's <b>HDMI</b> port. (HDMI Capture device needed, I am using "MegaWell" HDMI to USB 3.0)
 <br /><b>Insta360 4K</b> when live from PBS with it <b>Unstitched</b> video.
 
-Demo page: https://hh1390.itp.io:360
+Demo page: https://hh1390.itp.io:360/sphericalMerge
 
 * Headset Mode
 
