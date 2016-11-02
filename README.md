@@ -2,7 +2,7 @@
 # Spherical-Merge
 Dual Lens 360 camera stitching solution with manual controls
 
-now supporting Ricoh thetaS.
+now supporting Ricoh ThetaS and Insta360 Recorded Raw.
 
 <h4>Preview with Demo</h4>
 
