@@ -21,7 +21,7 @@ open Google Chrome and type "http://localhost:8000"
 
 Stitch menu will pop up from the side and you can choose to load a stitch preset for your 360 camera.
 
-* <b>Choose A Live Port</b>
+* <b>Choose A Streaming Port</b>
 
 Settings for live from USB and HDMI are slightly diffenent.
 <br />
