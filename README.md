@@ -4,6 +4,8 @@ Dual Lens 360 camera stitching solution with manual controls
 
 now supporting Ricoh ThetaS and Insta360 Recorded Raw.
 
+Demo page: https://hh1390.itp.io:360/sphericalMerge
+
 <h4>Preview with Demo</h4>
 
 ```
@@ -29,8 +31,6 @@ Now supporting:
 <br /><b>Ricoh ThetaS</b> when live from it's <b>USB</b> port, or it's recorded video.
 <br /><b>Ricoh ThetaS</b> when live from it's <b>HDMI</b> port. (HDMI Capture device needed, I am using "MegaWell" HDMI to USB 3.0)
 <br /><b>Insta360 4K</b> when live from PBS with it <b>Unstitched</b> video.
-
-Demo page: https://hh1390.itp.io:360/sphericalMerge
 
 * <b>Headset Mode</b>
 
