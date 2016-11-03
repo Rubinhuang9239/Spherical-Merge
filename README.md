@@ -14,6 +14,9 @@ $ python -m SimpleHTTPServer 8000
 open Google Chrome and type "http://localhost:8000"
 
 <h4>Demo Interface</h4>
+
+<img src="https://github.com/Rubinhuang9239/Spherical-Merge/blob/master/interface.png" width="240"/>
+
 * Stitch Mode
 
 Stitch menu will pop up from the side and you can choose to load a stitch preset for your 360 camera.
@@ -38,5 +41,6 @@ Split the screen side by side to fit on VR headsets. Support phone accelerometer
 Get live video from 360 camera and map the video as texture onto the sphere model.
 Web Cam will be used instead if there is no other camera connected.
 
-<h4>Stop "getUserMedia" when not using it</h4>
+<h4>To-do</h4>
+Stop "getUserMedia" when not using it/
 
