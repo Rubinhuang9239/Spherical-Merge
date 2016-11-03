@@ -17,11 +17,11 @@ open Google Chrome and type "http://localhost:8000"
 
 <img src="https://github.com/Rubinhuang9239/Spherical-Merge/blob/master/interface.png" width="200"/>
 
-* Stitch Mode
+* <b>Stitch Mode</b>
 
 Stitch menu will pop up from the side and you can choose to load a stitch preset for your 360 camera.
 
-* Choose A Live Port
+* <b>Choose A Live Port</b>
 
 Settings for live from USB and HDMI are slightly diffenent.
 <br />
@@ -32,11 +32,11 @@ Now supporting:
 
 Demo page: https://hh1390.itp.io:360/sphericalMerge
 
-* Headset Mode
+* <b>Headset Mode</b>
 
 Split the screen side by side to fit on VR headsets. Support phone accelerometer.
 
-* Get user Media
+* <b>Get user Media</b>
 
 Get live video from 360 camera and map the video as texture onto the sphere model.
 Web Cam will be used instead if there is no other camera connected.
