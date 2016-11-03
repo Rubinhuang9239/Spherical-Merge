@@ -17,12 +17,6 @@ body {
   margin: 0 auto;
 }
 
-#sideText{
-  background-color:#FF9900;
-  float:right;
-  width:70%;
-}
-
 section {
   display: block;
   margin: 0 0 20px 0;
