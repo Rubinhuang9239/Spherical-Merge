@@ -15,7 +15,7 @@ open Google Chrome and type "http://localhost:8000"
 
 <h4>Demo Interface</h4>
 
-<img src="https://github.com/Rubinhuang9239/Spherical-Merge/blob/master/interface.png" width="240"/>
+<img src="https://github.com/Rubinhuang9239/Spherical-Merge/blob/master/interface.png" width="180"/>
 
 * Stitch Mode
 
