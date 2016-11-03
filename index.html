@@ -1,93 +1,101 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Spherical-merge by Rubinhuang9239</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Spherical-merge</h1>
-      <h2 class="project-tagline">Dual Lens 360 camera stitch solution with manual controls</h2>
-      <a href="https://github.com/Rubinhuang9239/Spherical-Merge" class="btn">View on GitHub</a>
-      <a href="https://github.com/Rubinhuang9239/Spherical-Merge/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/Rubinhuang9239/Spherical-Merge/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <section class="main-content">
-      <p><img src="https://github.com/Rubinhuang9239/Spherical-Merge/blob/master/icon.png" alt=""></p>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Spherical-Merge by Rubinhuang9239</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Spherical-Merge</h1>
+        <h2>Dual Lens 360 camera stitch solution with manual controls</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/Rubinhuang9239/Spherical-Merge/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/Rubinhuang9239/Spherical-Merge/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/Rubinhuang9239/Spherical-Merge" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <p><img src="https://github.com/Rubinhuang9239/Spherical-Merge/blob/master/icon.png?raw=true" width="160"></p>
 
 <h1>
 <a id="spherical-merge" class="anchor" href="#spherical-merge" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Spherical-Merge</h1>
 
-<p>Dual Lens 360 camera stitching solution with manual controls</p>
+<p>Dual Lens 360 camera stitching solution with manual controls
+now supporting Ricoh ThetaS and Insta 360 4K Recorded Raw.</p>
 
-<p>now supporting Ricoh ThetaS and Insta360 Recorded Raw.</p>
+<hr>
 
-<h4>
-<a id="preview-with-demo" class="anchor" href="#preview-with-demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Preview with Demo</h4>
+<h3>
+<a id="preview-with-demo" class="anchor" href="#preview-with-demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Preview with Demo</h3>
 
 <pre><code>$ cd .../Spherical-Merge
 
 $ python -m SimpleHTTPServer 8000
 </code></pre>
 
-<p>open Google Chrome and type "http://localhost:8000"</p>
+<p>open Google Chrome and type <code>http://localhost:8000</code></p>
 
-<h4>
-<a id="demo-interface" class="anchor" href="#demo-interface" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo Interface</h4>
+<hr>
 
-<p><img src="https://github.com/Rubinhuang9239/Spherical-Merge/blob/master/interface.png" alt=""></p>
+<h2>
+<a id="demo-interface" class="anchor" href="#demo-interface" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo Interface</h2>
 
-<ul>
-<li><b>Stitch Mode</b></li>
-</ul>
+<p><img src="https://github.com/Rubinhuang9239/Spherical-Merge/blob/master/interface.png?raw=true" width="190"></p>
 
-<p>Stitch menu will pop up from the side and you can choose to load a stitch preset for your 360 camera.</p>
+<h3>
+<a id="stitch-mode" class="anchor" href="#stitch-mode" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Stitch Mode</h3>
 
-<ul>
-<li><b>Choose A Streaming Port</b></li>
-</ul>
+<p>Stitch menu will pop up from the side and you can choose to load a stitch preset for your 360 camera.
+<br></p>
 
-<p>Settings for live from USB and HDMI are slightly diffenent.
-<br>
-Now supporting:
-<br><b>Ricoh ThetaS</b> when live from it's <b>USB</b> port, or it's recorded video.
-<br><b>Ricoh ThetaS</b> when live from it's <b>HDMI</b> port. (HDMI Capture device needed, I am using "MegaWell" HDMI to USB 3.0)
-<br><b>Insta360 4K</b> when live from PBS with it <b>Unstitched</b> video.</p>
+<h3>
+<a id="choose-a-streaming-port" class="anchor" href="#choose-a-streaming-port" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Choose A Streaming Port</h3>
 
-<p>Demo page: <a href="https://hh1390.itp.io:360/sphericalMerge">https://hh1390.itp.io:360/sphericalMerge</a></p>
+<p>Live from ThetaS USB and HDMI are slightly different.</p>
 
-<ul>
-<li><b>Headset Mode</b></li>
-</ul>
+<p>Now supporting:</p>
 
-<p>Split the screen side by side to fit on VR headsets. Support phone accelerometer.</p>
+<p><b>Ricoh ThetaS</b> when live from <b>USB</b> port, or recorded video.</p>
 
-<ul>
-<li><b>Get user Media</b></li>
-</ul>
+<p><b>Ricoh ThetaS</b> when live from it's <b>HDMI</b> port.
+A HDMI Capture device needed, I am using "MegaWell" HDMI to USB 3.0.</p>
+
+<p><b>Insta 360 4K</b> when live from PBS with <b>Unstitched</b> video.</p>
+
+<h3>
+<a id="headset-mode" class="anchor" href="#headset-mode" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Headset Mode</h3>
+
+<p>Split the screen side by side to fit on VR headsets.
+Phone accelerometer is Supported.</p>
+
+<h3>
+<a id="get-user-media" class="anchor" href="#get-user-media" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get user Media</h3>
 
 <p>Get live video from 360 camera and map the video as texture onto the sphere model.
 Web Cam will be used instead if there is no other camera connected.</p>
 
-<h4>
-<a id="to-do" class="anchor" href="#to-do" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To-do</h4>
+<hr>
 
-<p>Stop "getUserMedia" when not using it/</p>
+<h2>
+<a id="to-do" class="anchor" href="#to-do" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To-do</h2>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/Rubinhuang9239/Spherical-Merge">Spherical-merge</a> is maintained by <a href="https://github.com/Rubinhuang9239">Rubinhuang9239</a>.</span>
+<p>Stop "getUserMedia" when not using it</p>
+      </section>
+    </div>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
+    
   </body>
 </html>
