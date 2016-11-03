@@ -17,7 +17,7 @@ open Google Chrome and type "http://localhost:8000"
 
 <img src="https://github.com/Rubinhuang9239/Spherical-Merge/blob/master/interface.png" width="200"/>
 
-* <b>Stitch Mode</b>
+* <b>Stitch Settings</b>
 
 Stitch menu will pop up from the side and you can choose to load a stitch preset for your 360 camera.
 
