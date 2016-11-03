@@ -49,21 +49,29 @@ body{
     .bnt{
       position: absolute;
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: 5px center;
       cursor: pointer;
-      opacity: 0.4;
+      opacity: 0.6;
       height: 35px;
-      width: 35px;
       z-index: 999;
-      left: 2px;
+      left: 0px;
       top: 0px;
     }
 
     #stitch{
       background-image: url("../img/360.svg");
       background-color: #00EE88;
-      background-size: 72%;
+      background-size: auto 72%;
       left:0px;
+      color: #FFF;
+      width: 135px;
+      padding-left: 40px;
+      height: 35px;
+      line-height: 35px;
+      transition: opacity 0.2s ease-in-out;
+    }
+    #stitch:hover{
+      opacity: 1;
     }
 
     #stitchHelper{
