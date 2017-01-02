@@ -41,6 +41,9 @@
 		<script src="js/animateUI.js"></script> <!-- Optional, Just for supporting this Demo -->
 		<script src="js/getUserMedia.js"></script> <!-- Optional, include this when you need hook up with a local 360 Camera -->
 
+		<script src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script><!--Optional_HLS_Library(for wowza_live_stream)-->
+		<script src="js/hlsConfig.js"></script>
+
 
 		<script>
 
@@ -59,6 +62,8 @@
 			//userMedia.init();
 
 			animate.checkDoms();//Just check if there is a need to show Angle with HUD//
+
+			//HLS.init();
 		});
 
 		</script>
@@ -75,6 +80,8 @@
 					<option class = "streamPort" value="Ricoh_USB">Ricoh USB Live / Recorded</option>
 					<option class = "streamPort" value="Ricoh_HDMI">Ricoh HDMI Live</option>
 					<option class = "streamPort" value="Insta360_RAW">Insta360 4K Unstitched</option>
+					<!-- <option class = "streamPort" value="Ricoh_HLS">Ricoh HLS</option> -->
+					<option class = "streamPort" value="Insta360_HLS">Insta360 4K HLS</option>
 				</select>
 			</div>
 
