@@ -6,3 +6,5 @@ Modified for Svrround usage.
 <br />
 Original repo: https://github.com/Rubinhuang9239/Spherical-Merge
 
+ https://rubinhuang9239.github.io/Spherical-Merge/
+
